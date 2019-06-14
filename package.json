@@ -1,0 +1,26 @@
+{
+  "name": "priyafecproxy",
+  "version": "1.0.0",
+  "description": "Priya Fec Proxy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rpt13-tokillamockingbird/priyaFECProxy.git"
+  },
+  "author": "Priya Dubal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rpt13-tokillamockingbird/priyaFECProxy/issues"
+  },
+  "homepage": "https://github.com/rpt13-tokillamockingbird/priyaFECProxy#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^0.19.1",
+    "jquery": "^3.4.1"
+  }
+}
