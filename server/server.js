@@ -6,10 +6,10 @@ var cors = require('cors');
 app.use(cors());
 
 app.use('/:id', express.static('client'));
-app.use('/hundred/:id', proxy({ target: 'http://localhost:4554', changeOrigin: true }));
-app.use('/productInfo/:id', proxy({ target: 'http://localhost:4000', changeOrigin: true }));
-app.use('/productBuyerService/:id', proxy({ target: 'http://localhost:4554', changeOrigin: true }));
-app.use('/productQtyInfo', proxy({ target: 'http://localhost:4000', changeOrigin: true }));
+app.use('/hundred/:id', proxy({ target: 'http://ec2-54-175-0-74.compute-1.amazonaws.com', changeOrigin: true }));
+app.use('/productInfo/:id', proxy({ target: 'http://ec2-3-86-76-90.compute-1.amazonaws.com', changeOrigin: true }));
+app.use('/productBuyerService/:id', proxy({ target: 'http://ec2-54-175-0-74.compute-1.amazonaws.com', changeOrigin: true }));
+app.use('/productQtyInfo', proxy({ target: 'http://ec2-3-86-76-90.compute-1.amazonaws.com', changeOrigin: true }));
 app.use('/Priya/:id', proxy({ target: 'http://localhost:3004', changeOrigin: true }));
 app.use('/review/:id', proxy({ target: 'http://localhost:3004', changeOrigin: true }));
 
