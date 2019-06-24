@@ -6,7 +6,6 @@
     <title>Product Buyer!!</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
 </head>
 
 <body>
@@ -47,11 +46,21 @@
         <div id="ProductDescription"></div>
         <div style="margin:20px" id='reviewId'></div>
     </div>
-    <script src="http://127.0.0.1:4000/5000/bundle.js">
+    <script>
+        debugger;
+        let pathName = window.location.pathname;
+        let srcPathName = `http://ec2-54-175-0-74.compute-1.amazonaws.com${pathName}bundle.js`
+        var script = document.createElement('script');
+        script.src = srcPathName;
+        document.getElementsByTagName('script')[0].parentNode.appendChild(script);
+        var script2 = document.createElement('script');
+        let srcPathName2 = `http://ec2-3-86-76-90.compute-1.amazonaws.com${pathName}bundle.js`
+        script2.src = srcPathName2;
+        document.getElementsByTagName('script')[0].parentNode.appendChild(script2)
     </script>
-    <script src="http://127.0.0.1:4554/5000/bundle.js"></script>
+
     <script src="http://127.0.0.1:3004/5000/bundle.js"></script>
-    <script src="http://127.0.0.1:3001/5000/main.671f9b67f7b917b0ebdd.bundle.js"></script>
+    <script src="http://127.0.0.1:3010/5000/main.671f9b67f7b917b0ebdd.bundle.js"></script>
 
 </body>
 
