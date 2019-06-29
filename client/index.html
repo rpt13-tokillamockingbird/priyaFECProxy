@@ -53,14 +53,25 @@
         var script = document.createElement('script');
         script.src = srcPathName;
         document.getElementsByTagName('script')[0].parentNode.appendChild(script);
+
         var script2 = document.createElement('script');
         let srcPathName2 = `http://ec2-3-86-76-90.compute-1.amazonaws.com${pathName}bundle.js`
         script2.src = srcPathName2;
-        document.getElementsByTagName('script')[0].parentNode.appendChild(script2)
+        document.getElementsByTagName('script')[0].parentNode.appendChild(script2);
+
+        var script3 = document.createElement('script');
+        let srcPathName3 = `http://ec2-3-80-184-14.compute-1.amazonaws.com${pathName}bundle.js`
+        script3.src = srcPathName3;
+        document.getElementsByTagName('script')[0].parentNode.appendChild(script3)
+
+        var script4 = document.createElement('script');
+        let srcPathName4 = `http://ec2-54-86-22-153.compute-1.amazonaws.com${pathName}main.8f81912c4bb8b8b17da3.bundle.js`
+        script4.src = srcPathName4;
+        document.getElementsByTagName('script')[0].parentNode.appendChild(script4)
     </script>
 
-    <script src="http://127.0.0.1:3004/5000/bundle.js"></script>
-    <script src="http://127.0.0.1:3010/5000/main.671f9b67f7b917b0ebdd.bundle.js"></script>
+    <!-- <script src="http://127.0.0.1:3004/5000/bundle.js"></script>
+    <script src="http://127.0.0.1:3010/5000/main.671f9b67f7b917b0ebdd.bundle.js"></script> -->
 
 </body>
 
