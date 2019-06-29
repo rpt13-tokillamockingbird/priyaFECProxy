@@ -12,8 +12,8 @@ app.use('/hundred/:id', proxy({ target: 'http://ec2-54-175-0-74.compute-1.amazon
 app.use('/productInfo/:id', proxy({ target: 'http://ec2-3-86-76-90.compute-1.amazonaws.com', changeOrigin: true }));
 app.use('/productBuyerService/:id', proxy({ target: 'http://ec2-54-175-0-74.compute-1.amazonaws.com', changeOrigin: true }));
 app.use('/productQtyInfo', proxy({ target: 'http://ec2-3-86-76-90.compute-1.amazonaws.com', changeOrigin: true }));
-app.use('/Priya/:id', proxy({ target: 'http://ec2-3-80-184-14.compute-1.amazonaws.com', changeOrigin: true }));
-app.use('/review/:id', proxy({ target: 'http://ec2-3-80-184-14.compute-1.amazonaws.com', changeOrigin: true }));
+app.use('/Priya/:id', proxy({ target: 'http://ec2-54-196-121-70.compute-1.amazonaws.com', changeOrigin: true }));
+app.use('/review/:id', proxy({ target: 'http://ec2-54-196-121-70.compute-1.amazonaws.com', changeOrigin: true }));
 
 app.listen(port, () => console.log(`NordStorm is running on port 127.0.0.1:${port}`));
 
